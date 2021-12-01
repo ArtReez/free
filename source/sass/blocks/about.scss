@@ -61,6 +61,7 @@
   min-height: 92px;
   max-width: 300px;
   margin-right: 30px;
+
   @include font(17, 20, 700);
 }
 
@@ -68,6 +69,7 @@
   .about__item {
     min-height: 97px;
     margin-right: 20px;
+
     @include font(20, 22, 700);
   }
 

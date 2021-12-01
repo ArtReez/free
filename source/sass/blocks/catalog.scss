@@ -39,10 +39,10 @@
 }
 
 .catalog__slogan {
+  @include font (27, 30, 700);
   height: 298px;
   margin: 0;
   padding-top: 72px;
-  @include font (27, 30, 700);
   text-align: center;
   background-image: url("../../img/header-mobile.jpg");
   background-repeat: no-repeat;
@@ -54,8 +54,8 @@
 
 
   @media (min-width: $tablet-width) {
-    height: 627px;
     @include font (43, 50, 700);
+    height: 627px;
     padding-top: 155px;
     background-image: url("../../img/header-desktop.jpg");
 
@@ -80,16 +80,16 @@
 }
 
 .catalog__item {
+  @include font (19, 24, 700);
   display: flex;
   align-items: center;
   min-height: 103px;
   padding-left: 30px;
-  @include font (19, 24, 700);
 
   @media (min-width: $tablet-width) {
+    @include font (20, 30, 700);
     min-height: 119px;
     padding-left: 36px;
-    @include font (20, 30, 700);
   }
 
   @media (min-width: $desktop-width) {

@@ -34,19 +34,16 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 .site-list__link {
+  @include font(17, 24, 700);
   display: block;
   padding: 27px 0 27px 76px;
-  @include font(17, 24, 700);
 
   @media (min-width: $tablet-width) {
-    border: none;
     padding: 27px 18px;
+    border: none;
   }
 
   &--first {
@@ -55,7 +52,7 @@
     }
 
     @media (min-width: $desktop-width) {
-    border-right: 1px solid $light-grey;
+      border-right: 1px solid $light-grey;
     }
   }
 }

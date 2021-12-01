@@ -12,7 +12,7 @@
   padding: 0 30px;
   border-top: 1px solid $light-grey;
   border-bottom: 1px solid $light-grey;
-  box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 
   @media (min-width: $tablet-width) {
     width: 556px;
@@ -24,11 +24,11 @@
 }
 
 .modal__title {
+  @include font(25, 30, 700);
   margin: 0;
   padding: 28px 0 14px 0;
-  @include font(25, 30, 700);
   text-align: center;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .modal__fieldset {
@@ -37,8 +37,8 @@
 }
 
 .modal__legend {
-  padding-bottom: 22px;
   @include font(15, 30, $clr:$medium-grey);
+  padding-bottom: 22px;
   text-align: center;
 }
 

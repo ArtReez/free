@@ -46,9 +46,9 @@
 }
 
 .catalog-ctg__name {
+  @include font (27, 30, 700);
   margin: 0;
   padding-top: 72px;
-  @include font (27, 30, 700);
   text-align: center;
 
   @media (min-width: $tablet-width) {

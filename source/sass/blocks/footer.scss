@@ -22,7 +22,7 @@
   }
 }
 
-.page-footer__logo{
+.page-footer__logo {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -42,11 +42,11 @@
 }
 
 .social__list {
+  @include clear-list;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 142px;
-  @include clear-list;
 }
 
 .page-footer__copyright {
@@ -65,8 +65,8 @@
 }
 
 .copyright__text {
-  margin-right: 27px;
   @include font(19, 18, 700);
+  margin-right: 27px;
 }
 
 .copyright__link {

@@ -93,15 +93,15 @@
   margin: 0;
 }
 
-.featured__list{
+.featured__list {
   padding-bottom: 28px;
 }
 
 .featured__item {
+  @include font(15, 20, $clr: $medium-grey);
   display: flex;
   align-items: center;
   height: 39px;
-  @include font(15, 20, $clr: $medium-grey);
   border-bottom: 1px solid $light-grey;
 }
 
@@ -110,15 +110,15 @@
 }
 
 .featured__price {
+  @include font(17, 24, 700, $medium-grey);
   height: 74px;
   padding-top: 26px;
-  @include font(17, 24, 700, $medium-grey);
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    @include font(20, 24, 700, $medium-grey);
     height: 114px;
     padding-top: 57px;
-    @include font(20, 24, 700, $medium-grey);
   }
 
   @media (min-width: $desktop-width) {
@@ -140,4 +140,3 @@
     margin-bottom: 73px;
   }
 }
-

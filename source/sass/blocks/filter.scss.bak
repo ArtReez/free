@@ -169,9 +169,6 @@
 }
 
 .filter__input {
-  @include font(17, 18, $clr:$medium-grey);
-  outline: none;
-
   &--radio + label,
   &--checkbox + label {
     &::before {
@@ -183,21 +180,25 @@
       height: 36px;
       border: 2px solid $medium-grey;
     }
-  }
 
+    @media (min-width: $tablet-width) {
+      &::before {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+}
+
+.filter__input {
   &--radio + label {
     &::before {
       border-radius: 50%;
     }
   }
+}
 
-  @media (min-width: $tablet-width) {
-    &::before {
-      width: 45px;
-      height: 45px;
-    }
-  }
-
+.filter__input {
   &--radio:checked + label,
   &--checkbox:checked + label {
     &::after {
@@ -209,22 +210,29 @@
       height: 16px;
       background-color: $decor-green;
     }
-  }
 
+    @media (min-width: $tablet-width) {
+      &::after {
+        top: 5px;
+        left: -41px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.filter__input {
   &--radio:checked + label {
     &::after {
       border-radius: 50%;
     }
   }
+}
 
-  @media (min-width: $tablet-width) {
-    &::after {
-      top: 5px;
-      left: -41px;
-      width: 20px;
-      height: 20px;
-    }
-  }
+.filter__input {
+  @include font(17, 18, $clr:$medium-grey);
+  outline: none;
 
   &--name,
   &--phone,
@@ -252,88 +260,16 @@
       background-color: $light-grey;
     }
   }
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:active {
+    border-bottom-color: $decor-green;
+  }
 }
-
-// .filter__input {
-//   &--radio + label {
-//     &::before {
-//       border-radius: 50%;
-//     }
-//   }
-// }
-
-// .filter__input {
-//   &--radio:checked + label,
-//   &--checkbox:checked + label {
-//     &::after {
-//       content: "";
-//       position: absolute;
-//       top: 2px;
-//       left: -43px;
-//       width: 16px;
-//       height: 16px;
-//       background-color: $decor-green;
-//     }
-
-//     @media (min-width: $tablet-width) {
-//       &::after {
-//         top: 5px;
-//         left: -41px;
-//         width: 20px;
-//         height: 20px;
-//       }
-//     }
-//   }
-// }
-
-// .filter__input {
-//   &--radio:checked + label {
-//     &::after {
-//       border-radius: 50%;
-//     }
-//   }
-// }
-
-// .filter__input {
-//   @include font(17, 18, $clr:$medium-grey);
-//   outline: none;
-
-//   &--name,
-//   &--phone,
-//   &--email {
-//     width: 100%;
-//     padding: 17px 10px 17px 0;
-//     color: $medium-grey;
-//     border: none;
-//     border-bottom: 2px;
-//     border-bottom-color: $medium-grey;
-//     border-bottom-style: solid;
-//   }
-
-//   @media (min-width: $tablet-width) {
-//     &--name,
-//     &--phone,
-//     &--email {
-//       padding: 0 10px 17px 20px;
-//       margin-left: 25px;
-//     }
-
-//     &--phone,
-//     &--email {
-//       margin-left: 0;
-//       background-color: $light-grey;
-//     }
-//   }
-
-//   &::placeholder {
-//     opacity: 0.3;
-//   }
-
-//   &:hover,
-//   &:active {
-//     border-bottom-color: $decor-green;
-//   }
-// }
 
 .filter__description {
   @include font(14, 16, $clr:$medium-grey)

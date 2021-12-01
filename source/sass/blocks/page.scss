@@ -4,6 +4,8 @@
 }
 
 .page__body {
+  @include font-style;
+  @include font;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
@@ -11,8 +13,6 @@
   min-height: 100%;
   // min-height: 100vh; // alternative to percentages
   margin: 0; // include in Normalize.css
-  @include font-style;
-  @include font;
   background-color: $basic-white;
   // margin: 0 auto; // Проверить!
   // overflow-x: hidden; //Проверить!
