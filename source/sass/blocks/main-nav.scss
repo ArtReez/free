@@ -33,7 +33,7 @@
   width: 20px;
   height: 2px;
   background-color: $dark-grey;
-  box-shadow: 0 6px 0 0 $dark-grey, 0 12px 0 0 $dark-grey;;
+  box-shadow: 0 6px 0 0 $dark-grey, 0 12px 0 0 $dark-grey;
 }
 
 .main-nav--closed .site-list__item,
@@ -72,7 +72,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    // padding: 0;
     margin: 0 auto;
     max-width: 1049px;
     padding: 0 50px;
@@ -84,7 +83,7 @@
 }
 
 .main-nav--nojs .main-nav__toggle {
-  display: none
+  display: none;
 }
 
 .main-nav--nojs .main-nav__wrap {

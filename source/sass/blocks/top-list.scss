@@ -35,16 +35,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: initial;
     @include font(15, 24, 700);
+    display: initial;
     padding: 27px 30px;
   }
 }
 
 .top-list__item-features {
   @media (min-width: $tablet-width) {
-    flex-grow: 1;
     @include font(15, 24, $clr:$medium-grey);
+    flex-grow: 1;
     text-align: end;
   }
 }

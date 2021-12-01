@@ -25,9 +25,9 @@
 }
 
 .form__name {
+  @include font (27, 30, 700);
   margin: 0;
   padding: 73px 10px;
-  @include font (27, 30, 700);
   text-align: center;
   background-color: $bg-grey;
 
@@ -41,13 +41,13 @@
 }
 
 .form__slogan {
+  @include font (13, 24);
   margin: 0;
   padding: 17px 0 29px;
-  @include font (13, 24);
 
   @media (min-width: $tablet-width) {
-    padding: 54px 0 63px;
     @include font (17, 30);
+    padding: 54px 0 63px;
   }
 
   @media (min-width: $desktop-width) {

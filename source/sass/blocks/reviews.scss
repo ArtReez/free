@@ -21,8 +21,8 @@
     display: grid;
     grid-template-rows: min-content auto;
     grid-template-columns: 1fr auto;
-    margin-bottom: 63px;
     margin: 0 auto;
+    margin-bottom: 63px;
     max-width: 1049px;
     padding: 0 50px;
   }
@@ -39,8 +39,8 @@
   padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    grid-area: 1/1/2/2;
     @include font(43, 50, 700);
+    grid-area: 1/1/2/2;
     // margin-bottom: 39px;
     padding: 0;
   }
@@ -69,12 +69,11 @@
     @include font(43, 50, 700);
     padding-bottom: 39px;
   }
-
 }
 
 .reviews__text {
-  margin: 0;
   @include font(15, 30, $clr: $medium-grey);
+  margin: 0;
   padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
@@ -88,8 +87,8 @@
 }
 
 .reviews__author-name {
-  display: block;
   @include font(17, 24, 700);
+  display: block;
   padding-bottom: 20px;
   font-style: normal;
 
@@ -103,8 +102,8 @@
 }
 
 .reviews__author-social {
-  margin: 0;
   @include font(17, 30, $clr: $medium-grey);
+  margin: 0;
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
@@ -146,14 +145,14 @@
 }
 
 .reviews__button {
+  @include font(18, 20, 700, $medium-grey);
   display: block;
   min-width: 175px;
-  @include font(18, 20, 700, $medium-grey);
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    grid-area: 1/2/2/3;
     @include font(17, 20, 700, $medium-grey);
+    grid-area: 1/2/2/3;
     margin-bottom: 40px;
   }
 }
