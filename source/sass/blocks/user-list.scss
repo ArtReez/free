@@ -1,0 +1,82 @@
+@import "global/variables";
+@import "global/mixins";
+
+.user-list {
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    border-bottom: 1px solid $light-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+    flex-grow: 0;
+  }
+}
+
+// .user-list a {
+//   text-align: center;
+//   color: $basic-black;
+// }
+
+// .user-list p {
+//   margin: 0;
+// }
+
+.user-list__search,
+.user-list__cart {
+  position: relative;
+  display: block;
+  padding: 27px 0 27px 76px;
+
+  @include font(17, 24, 700);
+  border-bottom: 1px solid $light-grey;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.user-list__search {
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid $light-grey;
+    border-right: 1px solid $light-grey;
+  }
+}
+
+.user-list__search-icon {
+  position: absolute;
+  top: 31px;
+  left: 33px;
+  width: 18px;
+  height: 18px;
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    left: 30px;
+  }
+}
+
+.user-list__search-name {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.user-list__cart-icon {
+  position: absolute;
+  top: 29px;
+  left: 33px;
+  width: 21px;
+  height: 18px;
+  opacity: 0.2;
+}
+
+.user-list__cart-name {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+}

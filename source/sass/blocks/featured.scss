@@ -1,0 +1,143 @@
+@import "global/variables";
+@import "global/mixins";
+
+.featured p {
+  margin: 0;
+}
+
+.featured {
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+  }
+}
+
+.featured__wrap {
+  width: auto;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: 1049px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    padding: 0 50px;
+  }
+}
+
+.featured__header {
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 38px;
+  }
+}
+
+.featured__title {
+  @include font(25, 30, 700);
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font(43, 50, 700);
+    flex: 0 1 200%;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(53, 57, 700);
+    order: 2;
+  }
+}
+
+.featured__label {
+  @include font(17, 20, 700, $basic-green);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font(17, 17, 700, $basic-green);
+    flex: 0 2 100%;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 43px;
+  }
+}
+
+.featured__text {
+  padding-bottom: 21px;
+  color: $medium-grey;
+
+  @media (min-width: $tablet-width) {
+    @include font(17, 30, $clr: $medium-grey);
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 60px;
+  }
+}
+
+.featured__list,
+.featured__description {
+  margin: 0;
+}
+
+.featured__list{
+  padding-bottom: 28px;
+}
+
+.featured__item {
+  display: flex;
+  align-items: center;
+  height: 39px;
+  @include font(15, 20, $clr: $medium-grey);
+  border-bottom: 1px solid $light-grey;
+}
+
+.featured__name {
+  min-width: 97px;
+}
+
+.featured__price {
+  height: 74px;
+  padding-top: 26px;
+  @include font(17, 24, 700, $medium-grey);
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    height: 114px;
+    padding-top: 57px;
+    @include font(20, 24, 700, $medium-grey);
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 166px;
+    padding-top: 109px;
+  }
+}
+
+.featured__button {
+  @include font(18, 20, 700, $medium-grey);
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    @include font(17, 20, 700);
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+  }
+}
+

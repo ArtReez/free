@@ -1,0 +1,105 @@
+@import "global/variables";
+@import "global/mixins";
+
+.card-list {
+  @include clear-list;
+    & p {
+      margin: 0;
+    }
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.card-list__item {
+  margin-bottom: 30px;
+  border: 1px solid $light-grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    width: 316px;
+    margin-right: 51px;
+
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.card-list__img {
+  display: block;
+  width: 100%;
+  background-color: $bg-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 462px;
+  }
+}
+
+.card-list__inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.card-list__description {
+  padding: 27px 28px 17px 28px;
+}
+
+.card-list__title {
+  @include font(17, 24, 700);
+  padding-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    @include font(20, 24, 700);
+    padding-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(20, 24, 700);
+    padding-bottom: 7px;
+  }
+}
+
+.card-list__feature {
+  @include font(13, 30, $clr: $medium-grey);
+
+  @media (min-width: $tablet-width) {
+    @include font(15, 30, $clr: $medium-grey);
+  }
+}
+
+.card-list__footer {
+  margin: 0 28px 26px 28px;
+  padding-top: 22px;
+  border-top: 1px solid $light-grey;
+
+}
+
+.card-list__price {
+  @include font(15, 20, 700);
+
+  @media (min-width: $tablet-width) {
+    @include font(17, 24, 700);
+  }
+}

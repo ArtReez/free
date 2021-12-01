@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Каталог товаров в интернет-магазине "Мишка"</title>
+    <link rel="stylesheet" href="lib/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="vh">Открыть меню</span></button>
+      <div class="main-nav__wrap">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
+        </a>
+        <ul class="main-nav__list site-list site-list--color">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--first" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="handmade.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <div class="main-nav__list user-list">
+          <a class="user-list__search" href="search.html">
+            <svg class="user-list__search-icon" width="18" height="18">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+            <p>Поиск по сайту</p>
+          </a>
+          <a class="user-list__cart" href="cart.html">
+            <svg class="user-list__cart-icon" width="21" height="18">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+            <p class="user-list__cart-name">Корзина: <span>Пока пусто</span></p>
+          </a>
+        </div>
+        <div class="main-nav__list top-list top-list--color">
+          <a class="top-list__item" href="news.html">Новые поступления</a>
+          <a class="top-list__item" href="sales.html">Распродажа</a>
+          <span class="top-list__item-features">Бесплатная доставка по России</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="vh">Каталог товаров в интернет-магазине "Мишка"</h1>
+
+    <section class="catalog-ctg">
+      <div class="catalog-ctg__wrap">
+        <header class="catalog-ctg__header">
+          <h2 class="catalog-ctg__name">Каталог товаров</h2>
+        </header>
+        <ul class="catalog-ctg__list card-list">
+          <li class="card-list__item">
+            <img class="card-list__img" src="img/#" width="260" height="195" alt="Зайчик с корзинкой">
+            <div class="card-list__inner">
+              <div class="card-list__description">
+                <p class="card-list__title">Зайчик-попрыгайчик</p>
+                <p class="card-list__feature">Рост 30 см, вес 200 г</p>
+              </div>
+              <div class="card-list__footer">
+                <p class="card-list__price">1 200 руб.</p>
+                <button class="card-list__cart vh">
+                  <svg class="user-list__cart-icon" width="20" height="19">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </li>
+
+          <li class="card-list__item">
+            <img class="card-list__img" src="img/#" width="260" height="195" alt="Зайчик с корзинкой">
+            <div class="card-list__inner">
+              <div class="card-list__description">
+                <p class="card-list__title">Корзинка для белья</p>
+                <p class="card-list__feature">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <div class="card-list__footer">
+                <p class="card-list__price">690 руб.</p>
+                <button class="card-list__cart vh">
+                  <svg class="user-list__cart-icon" width="20" height="19">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </li>
+
+          <li class="card-list__item">
+            <img class="card-list__img" src="img/#" width="260" height="195" alt="Зайчик с корзинкой">
+            <div class="card-list__inner">
+              <div class="card-list__description">
+                <p class="card-list__title">Большая корзинка для игрушек</p>
+                <p class="card-list__feature">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <div class="card-list__footer">
+                <p class="card-list__price">1 500 руб.</p>
+                <button class="card-list__cart vh">
+                  <svg class="user-list__cart-icon" width="20" height="19">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="catalog-ctg__list video-list">
+          <p class="video-list__title">Процесс производства</p>
+          <video class="video-list__video" src="img/#" width="260" height="160"></video>
+          <p class="video-list__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <button class="video-list__button button">Сделать заказ</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrap">
+      <div class="page-footer__logo">
+        <img src="img/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина">
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://insatgram.com">
+              <img src="img/insta.svg" width="22" height="21" alt="Мы в инстаграме">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://facebook.com">
+              <img src="img/fb.svg" width="15" height="28" alt="Мы в фейсбуке">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com">
+              <img src="img/twitter.svg" width="23" height="20" alt="Мы в твиттере">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="#">
+          <img src="img/logo-copyright.svg" width="27" height="34" alt="Иконка копирайта">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <section class="modal vh">
+    <div class="modal__wrap">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <form method="GET" action="https://echo.htmlacademy.ru">
+        <fieldset class="modal__fieldset">
+          <legend class="modal__legend">Выберите размер:</legend>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <label class="modal__label" for="s">S</label>
+              <input class="modal__input" type="radio" id="s" name="size" value="S" checked>
+            </li>
+            <li class="modal__item">
+              <label class="modal__label" for="m">M</label>
+              <input class="modal__input" type="radio" id="m" name="size" value="M">
+            </li>
+            <li class="modal__item">
+              <label class="modal__label" for="l">L</label>
+              <input class="modal__input" type="radio" id="l" name="size" value="L">
+            </li>
+          </ul>
+        </fieldset>
+        <button class="modal__button button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
