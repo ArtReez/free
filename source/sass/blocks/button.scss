@@ -1,0 +1,12 @@
+@import "global/variables";
+@import "global/mixins";
+
+.button {
+  width: 100%;
+  padding: 16px 20px;
+  @include font(17, 20, 700);
+  text-transform: uppercase;
+  background-color: $basic-white;
+  border: 2px solid $medium-grey;
+  cursor: pointer;
+}

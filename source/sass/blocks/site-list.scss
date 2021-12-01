@@ -1,0 +1,61 @@
+@import "global/variables";
+@import "global/mixins";
+
+.site-list {
+  @include clear-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    border: none;
+    background-color: $bg-catalog;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    background-color: initial;
+    border-bottom: 1px solid $light-grey;
+  }
+
+  // &--color {
+  //   @media (min-width: $tablet-width)  {
+  //     background-color: $bg-grey;
+  //   }
+
+  //   @media (min-width: $desktop-width) {
+  //     background-color: initial;
+  //   }
+  // }
+}
+
+.site-list__item {
+  border-bottom: 1px solid $light-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.site-list__link {
+  display: block;
+  padding: 27px 0 27px 76px;
+  @include font(17, 24, 700);
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 27px 18px;
+  }
+
+  &--first {
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+    border-right: 1px solid $light-grey;
+    }
+  }
+}

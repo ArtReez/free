@@ -1,0 +1,112 @@
+@import "global/variables";
+@import "global/mixins";
+
+.catalog {
+  margin-bottom: 31px;
+  background-color: $bg-catalog;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
+}
+
+.catalog__wrap {
+  width: auto;
+  // padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: 1049px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    padding: 0 50px;
+  }
+}
+
+.catalog__header {
+  min-height: 282px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+}
+
+.catalog__slogan {
+  height: 298px;
+  margin: 0;
+  padding-top: 72px;
+  @include font (27, 30, 700);
+  text-align: center;
+  background-image: url("../../img/header-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/header-mobile@2x.jpg");
+  }
+
+
+  @media (min-width: $tablet-width) {
+    height: 627px;
+    @include font (43, 50, 700);
+    padding-top: 155px;
+    background-image: url("../../img/header-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/header-desktop@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font (53, 57, 700);
+    padding-top: 157px;
+  }
+}
+
+.catalog__list {
+  @include clear-list;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.catalog__item {
+  display: flex;
+  align-items: center;
+  min-height: 103px;
+  padding-left: 30px;
+  @include font (19, 24, 700);
+
+  @media (min-width: $tablet-width) {
+    min-height: 119px;
+    padding-left: 36px;
+    @include font (20, 30, 700);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 37px;
+    min-height: 119px;
+  }
+}
+
+.catalog__item a {
+  flex-basis: min-content;
+  color: $basic-white;
+}
+
+.catalog__item--interior {
+  background-color: $basic-green;
+}
+
+.catalog__item--toy {
+  background-color: $medium-green;
+}

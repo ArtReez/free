@@ -1,0 +1,56 @@
+@import "global/variables";
+@import "global/mixins";
+
+.modal {
+  min-height: 336px;
+}
+
+.modal__wrap {
+  width: auto;
+  // max-width: 556px;
+  // margin: 0 auto;
+  padding: 0 30px;
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
+  box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: $tablet-width) {
+    width: 556px;
+    margin: 0 auto;
+    padding: 0 108px;
+    max-width: 1049px;
+    border: 1px solid $light-grey;
+  }
+}
+
+.modal__title {
+  margin: 0;
+  padding: 28px 0 14px 0;
+  @include font(25, 30, 700);
+  text-align: center;
+  text-transform: uppercase
+}
+
+.modal__fieldset {
+  @include clear;
+  border: none;
+}
+
+.modal__legend {
+  padding-bottom: 22px;
+  @include font(15, 30, $clr:$medium-grey);
+  text-align: center;
+}
+
+.modal__list {
+  @include clear-list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__button {
+  margin: 46px 0 31px 0;
+  color: $basic-white;
+  background-color: $basic-green;
+  border: none;
+}

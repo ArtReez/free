@@ -1,0 +1,78 @@
+@import "global/variables";
+@import "global/mixins";
+
+.video-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $light-grey;
+  & p {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 682px auto;
+  }
+}
+
+.video-list__title {
+  padding: 22px 27px 26px 91px;
+  @include font(17, 24, 700);
+
+  @media (min-width: $tablet-width) {
+    padding: 41px 34px 25px 107px;
+    @include font(20, 24, 700);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 1/2/2/3;
+    padding: 96px 64px 27px 79px;
+  }
+}
+
+.video-list__video {
+  width: 100%;
+  background-color: $light-grey;
+
+  @media (min-width: $tablet-width) {
+    // width: 668px;
+    // width: auto;
+    height: 455px;
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    // width: 682px;
+    grid-area: 1/1/4/2;
+    order: initial;
+  }
+}
+
+.video-list__description {
+  padding: 35px 27px 41px 30px;
+  @include font(13, 24);
+
+  @media (min-width: $tablet-width) {
+    padding: 0 34px 40px 40px;
+    @include font(15, 30);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 36px 51px 79px;
+  }
+}
+
+.video-list__button {
+  width: initial;
+  margin: 0 34px 33px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 42px 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 3/2/4/3;
+    margin: 0 57px 58px 79px;
+  }
+}

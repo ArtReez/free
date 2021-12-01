@@ -1,0 +1,290 @@
+@import "global/variables";
+@import "global/mixins";
+
+.filter {
+  @media (min-width: $desktop-width) {
+    padding: 0 100px;;
+  }
+}
+
+.filter__set {
+  @include clear;
+  border: none;
+
+  &--type,
+  &--color {
+    margin-bottom: 43px;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 167px 1fr;
+      margin-bottom: 66px;
+    }
+  }
+
+  &--color {
+    @media (min-width: $tablet-width) {
+      padding-top: 40px;
+      background-color: $light-grey;
+    }
+  }
+
+  &--name,
+  &--phone,
+  &--email{
+    margin-bottom: 35px;
+
+    & label {
+      @include font(17, 18, 700);
+    }
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 167px 1fr;
+      align-items: baseline;
+    }
+  }
+
+  &--phone,
+  &--email {
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      background-color: $light-grey;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &--phone {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &--add {
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 167px 1fr;
+    }
+  }
+
+  &--add textarea {
+    width: 100%;
+    padding: 17px;
+    margin-bottom: 17px;
+    @include font(17, 18);
+    border-width: 2px;
+    border-color: $medium-grey;
+    outline: none;
+
+    &::placeholder {
+      opacity: 0.3;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: $decor-green;
+    }
+  }
+}
+
+.filter__legend {
+  @include font(17, 16, 700, $basic-green)
+  text-transform: uppercase;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1/1/2/2;
+  }
+
+  &--phone,
+  &--email {
+    margin-bottom: 0;
+  }
+}
+
+.filter__list {
+  @include clear-list;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1/2/2/3;
+  }
+
+  &--color {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.filter__option {
+  &--radio,
+  &--checkbox {
+    @include font(17, 18, 700);
+    margin-bottom: 30px;
+    padding-left: 55px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      @include font(19, 18, 700);
+      margin-bottom: 50px;
+    }
+  }
+
+  &--name {
+    margin-bottom: 22px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
+  & label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+
+    @media (min-width: $tablet-width) {
+    }
+  }
+}
+
+
+.filter__input {
+  &--radio + label,
+  &--checkbox + label {
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: -53px;
+      width: 36px;
+      height: 36px;
+      border: 2px solid $medium-grey;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+}
+
+.filter__input {
+  &--radio + label {
+    &::before {
+      border-radius: 50%;
+    }
+  }
+}
+
+.filter__input {
+  &--radio:checked + label,
+  &--checkbox:checked + label {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: -43px;
+      width: 16px;
+      height: 16px;
+      background-color: $decor-green;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        top: 5px;
+        left: -41px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.filter__input {
+  &--radio:checked + label {
+    &::after {
+      border-radius: 50%;
+    }
+  }
+}
+
+.filter__input {
+  @include font(17, 18, $clr:$medium-grey);
+  outline: none;
+
+  &--name,
+  &--phone,
+  &--email {
+    width: 100%;
+    padding: 17px 10px 17px 0;
+    color: $medium-grey;
+    border: none;
+    border-bottom: 2px;
+    border-bottom-color: $medium-grey;
+    border-bottom-style: solid;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--name,
+    &--phone,
+    &--email {
+      padding: 0 10px 17px 20px;
+      margin-left: 25px;
+    }
+
+    &--phone,
+    &--email {
+      margin-left: 0;
+      background-color: $light-grey;
+    }
+  }
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:active {
+    border-bottom-color: $decor-green;
+  }
+}
+
+.filter__description {
+  margin: 0;
+  @include font(14, 16, $clr:$medium-grey)
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    grid-area: 2/2/3/3;
+    top: 52px;
+    right: 0;
+  }
+}
+

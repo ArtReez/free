@@ -1,0 +1,14 @@
+$color: rgb(255, 0, 0);
+
+.page-header {
+  color: $color;
+}
+
+.test-2 {
+  background-color: rgb(0, 0, 255);
+}
+
+.test-3 {
+  background-color: $color;
+  clip-path: (0 0 0 0);
+}

@@ -1,0 +1,67 @@
+@import "global/variables";
+@import "global/mixins";
+
+.form {
+  margin-bottom: 54px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.form__wrap {
+  width: auto;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: 1049px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+  }
+}
+
+.form__name {
+  margin: 0;
+  padding: 73px 10px;
+  @include font (27, 30, 700);
+  text-align: center;
+  background-color: $bg-grey;
+
+  @media (min-width: $tablet-width) {
+    @include font (43, 50, 700);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font (53, 57, 700);
+  }
+}
+
+.form__slogan {
+  margin: 0;
+  padding: 17px 0 29px;
+  @include font (13, 24);
+
+  @media (min-width: $tablet-width) {
+    padding: 54px 0 63px;
+    @include font (17, 30);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 99px 0 63px;
+    margin-left: 270px;
+    margin-right: 95px;
+  }
+}
+
+.form__button {
+  color: $medium-grey;
+
+  @media (min-width: $tablet-width) {
+    width: fit-content;
+    padding: 16px 30px;
+  }
+}
